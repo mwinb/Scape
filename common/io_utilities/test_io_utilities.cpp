@@ -15,6 +15,7 @@ void it_reads_a_directory(void);
 void it_saves_an_object_to_a_file(void);
 void it_creates_an_object_from_a_dat_file(void);
 void it_gets_files_of_specified_extension(void);
+void it_gets_menu_selection(void);
 
 int main()
 {
@@ -25,6 +26,7 @@ int main()
 	it_saves_an_object_to_a_file();
 	it_creates_an_object_from_a_dat_file();
 	it_gets_files_of_specified_extension();
+	it_gets_menu_selection();
 	cout << "print_utils: Passed " << passed << "/" << total << " tests\n";
 }
 
@@ -100,7 +102,17 @@ void it_gets_files_of_specified_extension(void)
 {
 	total++;
 	vector<string> dat_files = get_files_of_type(".dat", "./");
-	print_item(dat_files[0], "", "\n");
 	assert(dat_files.size() > 0);
+	passed++;
+}
+
+void it_gets_menu_selection(void)
+{
+	total++;
+	int selection;
+	istringstream i_stream("3");
+	ostringstream o_stream;
+	selection = get_menu_selection(o_stream, i_stream);
+	assert(selection == 3);
 	passed++;
 }

@@ -40,6 +40,15 @@ void clear_input_stream(istream &is = cin)
 	is.ignore();
 }
 
+int get_menu_selection(ostream &o_stream = cout, istream &i_stream = cin)
+{
+	int selection;
+	print_item("Enter Selection: ", "", "", o_stream);
+	get_input(selection, i_stream);
+	clear_input_stream(i_stream);
+	return selection;
+}
+
 void read_directory(const string &name, vector<std::string> &file_names)
 {
 	DIR *dirp = opendir(name.c_str());
