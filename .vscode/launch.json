@@ -6,7 +6,7 @@
 			"name": "C++ Launch",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceRoot}/common/print_utils/test_print_utilities",
+			"program": "${workspaceRoot}/events/edit_character/test_edit_character",
 			"preLaunchTask": "build",
 			"internalConsoleOptions": "openOnSessionStart",
 			"logging": {

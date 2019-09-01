@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Scape",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/classes/*",
+                "${workspaceFolder}/common/io_utilities",
+                "${workspaceFolder}/events/edit_character"
+            ],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
